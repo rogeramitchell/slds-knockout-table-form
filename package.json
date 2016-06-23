@@ -6,6 +6,7 @@
   "author": "Roger Mitchell (@RogerMitchell)",
   "license": "ISC",
   "dependencies": {
-    "@salesforce-ux/design-system": "^2.0.2"
+    "@salesforce-ux/design-system": "^2.0.2",
+    "knockout": "^3.4.0"
   }
 }
