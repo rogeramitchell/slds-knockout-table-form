@@ -1,0 +1,11 @@
+{
+  "name": "slds-knockout-table-form",
+  "version": "1.0.0",
+  "description": "A working example of using Knockout.js with Salesforce Lightning Design System to allow for a form input to modify a table view.",
+  "main": "index.html",
+  "author": "Roger Mitchell (@RogerMitchell)",
+  "license": "ISC",
+  "dependencies": {
+    "@salesforce-ux/design-system": "^2.0.2"
+  }
+}
