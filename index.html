@@ -14,6 +14,7 @@
 		<script type="text/javascript" src="view.js"></script>
 	</head>
 	<body>
+		<!-- Form element -->
 		<div class="slds-grid slds-wrap">
 			<div class="slds-form-element">
 				<label for="start-date" class="slds-form-element__label">Start Date</label>
@@ -39,6 +40,59 @@
 					<input type="number" id="amount" class="slds-input" disabled />
 				</div>
 			</div>
+		</div>
+		<!-- Table that is manipulated based on form inputs -->
+		<div class="slds-grid slds-wrap">
+			<table class="slds-table slds-table--bordered slds-table--cell-buffer">
+				<thead>
+					<tr class="slds-text-heading--label">
+						<th scope="col" title="Month">Month</th>
+						<th scope="col" title="Amount">Amount</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-label="test" title="test">
+							<div class="slds-truncate">July 2016</div>
+						</td>
+						<td data-label="test" title="test">
+							<div class="slds-truncate">2000</div>
+						</td>
+					</tr>
+					<tr>
+						<td data-label="test" title="test">
+							<div class="slds-truncate">August 2016</div>
+						</td>
+						<td data-label="test" title="test">
+							<div class="slds-truncate">2000</div>
+						</td>
+					</tr>
+					<tr>
+						<td data-label="test" title="test">
+							<div class="slds-truncate">September 2016</div>
+						</td>
+						<td data-label="test" title="test">
+							<div class="slds-truncate">2000</div>
+						</td>
+					</tr>
+					<tr>
+						<td data-label="test" title="test">
+							<div class="slds-truncate">October 2016</div>
+						</td>
+						<td data-label="test" title="test">
+							<div class="slds-truncate">2000</div>
+						</td>
+					</tr>
+					<tr>
+						<td data-label="test" title="test">
+							<div class="slds-truncate">November 2016</div>
+						</td>
+						<td data-label="test" title="test">
+							<div class="slds-truncate">2000</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</body>
 </html>
