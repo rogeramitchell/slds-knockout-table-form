@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Importing Knockout -->
+		<script type="text/javascript" src="node_modules/knockout/build/output/knockout-latest.js"></script>
+
+		<!-- Importing SLDS -->
+		<link rel="stylesheet" type="text/css" href="node_modules/%40salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css" />
+
+		<!-- View Model for page -->
+		<script type="text/javascript" src="view.js"></script>
+	</head>
+	<body>
+		<div class="slds-grid slds-wrap">
+			<div class="slds-form-element">
+				<label for="start-date" class="slds-form-element__label">Start Date</label>
+				<div class="slds-form-element__control">
+					<input type="date" id="start-date" class="slds-input" />
+				</div>
+			</div>
+			<div class="slds-form-element">
+				<label for="num-months" class="slds-form-element__label">Number of Months</label>
+				<div class="slds-form-element__control">
+					<input type="number" id="num-months" class="slds-input" />
+				</div>
+			</div>
+			<div class="slds-form-element">
+				<label for="amount" class="slds-form-element__label">Amount</label>
+				<div class="slds-form-element__control">
+					<input type="number" id="amount" class="slds-input" />
+				</div>
+			</div>
+			<div class="slds-form-element">
+				<label for="amount" class="slds-form-element__label">Total</label>
+				<div class="slds-form-element__control">
+					<input type="number" id="amount" class="slds-input" disabled />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
