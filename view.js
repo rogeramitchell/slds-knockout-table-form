@@ -1,3 +1,8 @@
+/**
+*	KNOCKOUT CODE
+*	Below is the view model and application of such to support our page 
+**/
+
 var MonthTableViewModel = function(startDate, numberMonths, amount) {
 	this.startDate = ko.observable(startDate);
 	this.numberMonths = ko.observable(numberMonths);
@@ -7,6 +12,12 @@ var MonthTableViewModel = function(startDate, numberMonths, amount) {
 	}, this);
 };
 
+ko.applyBindings(new MonthTableViewModel(getToday(), 3, 1500));
+
+/**
+*	HELPER FUNCTIONS
+*	These support the view model, but are not directly tied to Knockout framework
+**/
 function getToday() {
 	var today = new Date();
 
@@ -27,5 +38,3 @@ function getToday() {
 	today = year + '-' + month + '-' + day;
 	return today;
 };
-
-ko.applyBindings(new MonthTableViewModel(getToday(), 3, 1500));
