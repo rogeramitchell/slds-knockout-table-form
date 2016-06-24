@@ -7,4 +7,25 @@ var MonthTableViewModel = function(startDate, numberMonths, amount) {
 	}, this);
 };
 
-ko.applyBindings(new MonthTableViewModel('1/1/2015', 3, 1500));
+function getToday() {
+	var today = new Date();
+
+	// parse today into separate components
+	var year = today.getFullYear();
+	var month = today.getMonth() + 1;
+	var day = today.getDate();
+
+	// perform transformations based on date values
+	if(month < 10) {
+		month = '0' + month;
+	}
+	if(day < 10) {
+		day = '0' + day;
+	}
+
+	// build conformant date string and return
+	today = year + '-' + month + '-' + day;
+	return today;
+};
+
+ko.applyBindings(new MonthTableViewModel(getToday(), 3, 1500));
