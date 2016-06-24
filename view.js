@@ -18,6 +18,12 @@ ko.applyBindings(new MonthTableViewModel(getToday(), 3, 1500));
 *	HELPER FUNCTIONS
 *	These support the view model, but are not directly tied to Knockout framework
 **/
+function getMonthString(monthNumber) {
+	var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+	return monthNames[monthNumber];
+};
+
 function getToday() {
 	var today = new Date();
 
