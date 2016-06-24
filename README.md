@@ -11,3 +11,10 @@ To display the table, the user must enter at least a **Date** and **Number of Mo
 If the user decides to enter an **Amount**, then we will display this in the second column for each row of the table.
 
 Next to the form, we will have an output that displays the sum of **Amount** in the table. This will dynamically change with the table as the user modifies the form.
+
+## Running TODO List
+
+- Create function to handle creation of array
+- Bind array with repeat of tr elements
+- Create validations on input values accepted
+- Update src for Knockout to minified version
