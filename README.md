@@ -18,3 +18,7 @@ Next to the form, we will have an output that displays the sum of **Amount** in 
 - Bind array with repeat of tr elements
 - Create validations on input values accepted
 - Update src for Knockout to minified version
+
+## Notes from 6/26/2016
+
+Need to work on the how to manipulate how **Start Date** will iterate across the months displayed in the table. This is a combination of using a helper function to define the **Month YYYY** label with the changes that occur to **Number of Months**.

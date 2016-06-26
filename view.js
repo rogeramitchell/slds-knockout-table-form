@@ -16,7 +16,10 @@ var MonthTableViewModel = function(startDate, numberMonths, amount) {
 		return getMonthString(d.getMonth());
 	}, this);
 	this.rowsNew = ko.computed(function() {
+		// empty the existing array
 		this.rows([]); 
+		var startDate = new Date(this.startDate());
+
 		for(i = 0; i < this.numberMonths(); i++) {
 			this.rows.push(
 			{month: "test", amount: this.amount()}
