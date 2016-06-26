@@ -47,45 +47,13 @@
 						<th scope="col" title="Amount">Amount</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody data-bind="foreach: rows">
 					<tr>
 						<td data-label="test" title="test">
-							<div class="slds-truncate">July 2016</div>
+							<div class="slds-truncate"><span data-bind="text: month"></span></div>
 						</td>
 						<td data-label="test" title="test">
-							<div class="slds-truncate">2000</div>
-						</td>
-					</tr>
-					<tr>
-						<td data-label="test" title="test">
-							<div class="slds-truncate">August 2016</div>
-						</td>
-						<td data-label="test" title="test">
-							<div class="slds-truncate">2000</div>
-						</td>
-					</tr>
-					<tr>
-						<td data-label="test" title="test">
-							<div class="slds-truncate">September 2016</div>
-						</td>
-						<td data-label="test" title="test">
-							<div class="slds-truncate">2000</div>
-						</td>
-					</tr>
-					<tr>
-						<td data-label="test" title="test">
-							<div class="slds-truncate">October 2016</div>
-						</td>
-						<td data-label="test" title="test">
-							<div class="slds-truncate">2000</div>
-						</td>
-					</tr>
-					<tr>
-						<td data-label="test" title="test">
-							<div class="slds-truncate">November 2016</div>
-						</td>
-						<td data-label="test" title="test">
-							<div class="slds-truncate">2000</div>
+							<div class="slds-truncate"><span data-bind="text: amount"></span></div>
 						</td>
 					</tr>
 				</tbody>
