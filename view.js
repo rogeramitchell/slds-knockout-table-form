@@ -10,12 +10,18 @@ var MonthTableViewModel = function(startDate, numberMonths, amount) {
 	this.total = ko.computed(function() {
 		return this.numberMonths() * this.amount();
 	}, this);
-	this.rows = ko.observableArray([
-		{ month: "July 2016", amount: 2000},
-		{ month: "August 2016", amount: 2000},
-		{ month: "September 2016", amount: 2000},
-		{ month: "October 2016", amount: 2000}
-	]);
+	this.rows = ko.observableArray([]);
+	this.monthName = ko.computed(function() {
+		var d = new Date(this.startDate());
+		return getMonthString(d.getMonth());
+	}, this);
+	this.rowsNew = ko.computed(function() {
+		for(i = 0; i < this.numberMonths(); i++) {
+			this.rows.push(
+			{month: "test", amount: this.amount()}
+			);
+		}
+	}, this);
 };
 
 ko.applyBindings(new MonthTableViewModel(getToday(), 3, 1500));
