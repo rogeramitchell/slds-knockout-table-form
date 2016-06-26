@@ -22,3 +22,8 @@ Next to the form, we will have an output that displays the sum of **Amount** in 
 ## Notes from 6/26/2016
 
 Need to work on the how to manipulate how **Start Date** will iterate across the months displayed in the table. This is a combination of using a helper function to define the **Month YYYY** label with the changes that occur to **Number of Months**.
+
+## Validation Functionality
+
+- Number of Months cannot be less than 1 nor greater than 24
+- Amount cannot be less than 0 nor greater than 4000

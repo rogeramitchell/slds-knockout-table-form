@@ -5,8 +5,8 @@
 
 var MonthTableViewModel = function(startDate, numberMonths, amount) {
 	this.startDate = ko.observable(startDate);
-	this.numberMonths = ko.observable(numberMonths);
-	this.amount = ko.observable(amount);
+	this.numberMonths = ko.observable(numberMonths).extend({ min: 1, max: 24});
+	this.amount = ko.observable(amount).extend({ min: 0, max: 4000});
 	this.total = ko.computed(function() {
 		return this.numberMonths() * this.amount();
 	}, this);
